@@ -26,8 +26,15 @@ input {
     background-color: wheat;
 }
 
+#textarea {
+    width: 29vw;
+    height: 15vh;
+    background-color: wheat
+}
+
+
 #submitBtn {
-    margin-left: 160px;
+    margin-left: 175px;
     width: 15vw;
     background-color: wheat;
     font-weight: bold;
@@ -36,4 +43,23 @@ input {
 
 #submitBtn:hover {
     box-shadow: white 1px 1px 10px;;
+}
+
+.labTitle {
+    justify-self: center;
+    color: orange;
+}
+
+.labNumber {
+    color: white;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 25px;
+}
+
+.theNote {
+    color: yellow;
+    font-weight: bold;
 }

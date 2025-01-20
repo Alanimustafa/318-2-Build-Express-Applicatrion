@@ -1,7 +1,7 @@
 html 
     head 
         title 318-2 LAB 
-        link(rel="stylesheet", href="../public/style.css")
+        link(rel="stylesheet", href="style.css")
     body 
         // The header Title
         h1(style="justify-self:center").homePageHeader Contact us Page
@@ -12,3 +12,29 @@ html
             a(href="./home.html").homeLink HOME |
             a(href="./about.html").aboutLink ABOUT | 
             a(href="./contactUs.html").contactUsLink CONTACT US 
+
+        // Adding a form to the home page
+        form.theForm(action="/users" method="post")
+            br
+            br
+            //User name input
+            label(for="name") Name:
+            input(type="text" name="name" placeholder="Full name")#name
+            br
+            br
+
+            //User name input
+            label(for="email") Email:
+            input(type="email" name="email" placeholder="Email")#email
+            br
+            br
+
+            // User Text
+            label(for="textarea") Your message:
+            br
+            textarea(name="textarea" placeholder="Your message")#textarea
+            br
+            br
+            // Submit
+            input(type="submit" value="Submit")#submitBtn
+

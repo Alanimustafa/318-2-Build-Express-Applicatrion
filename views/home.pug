@@ -1,7 +1,7 @@
 html 
     head 
         title 318-2 LAB 
-        link(rel="stylesheet", href="../public/style.css")
+        link(rel="stylesheet", href="style.css")
     body 
         // The header Title
         h1(style="justify-self:center").homePageHeader Home Page
@@ -13,23 +13,10 @@ html
             a(href="./about.html").aboutLink ABOUT | 
             a(href="./contactUs.html").contactUsLink CONTACT US
             
-
-
-        // Adding a form to the home page
-        form.theForm(action="/users" method="post")
-            br
-            br
-            //User name input
-            label(for="name") Name:
-            input(type="text" name="name" placeholder="Full name")#name
-            br
-            br
-
-            //User name input
-            label(for="email") Email:
-            input(type="email" name="email" placeholder="Email")#email
-            br
-            br
-            // Submit
-            input(type="submit" value="Submit")#submitBtn
+        h3.labNumber ALAB 318.2.1
+        h1.labTitle Building an Express Application
+        P(style="color:white"). 
+             Now that you have foundational knowledge of Express tools and techniques, it is time to construct an application according to given requirements.
+        P(class="theNote").  
+            Please go to Contact us page if you need to POST 
 

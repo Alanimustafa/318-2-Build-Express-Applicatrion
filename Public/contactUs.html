@@ -2,7 +2,7 @@
 <html> 
   <head> 
     <title>318-2 LAB </title>
-    <link rel="stylesheet" href="../public/style.css"/>
+    <link rel="stylesheet" href="style.css"/>
   </head>
   <body> 
     <!-- The header Title-->
@@ -11,5 +11,19 @@
     <div class="navBar"> 
       <!--The Navegation Links--><a class="homeLink" href="./home.html">HOME |</a><a class="aboutLink" href="./about.html">ABOUT | </a><a class="contactUsLink" href="./contactUs.html">CONTACT US </a>
     </div>
+    <!-- Adding a form to the home page-->
+    <form class="theForm" action="/users" method="post"><br/><br/>
+      <!--User name input-->
+      <label for="name">Name:</label>
+      <input type="text" name="name" placeholder="Full name" id="name"/><br/><br/>
+      <!--User name input-->
+      <label for="email">Email:</label>
+      <input type="email" name="email" placeholder="Email" id="email"/><br/><br/>
+      <!-- User Text-->
+      <label for="textarea">Your message:</label><br/>
+      <textarea name="textarea" placeholder="Your message" id="textarea"></textarea><br/><br/>
+      <!-- Submit-->
+      <input type="submit" value="Submit" id="submitBtn"/>
+    </form>
   </body>
 </html>
