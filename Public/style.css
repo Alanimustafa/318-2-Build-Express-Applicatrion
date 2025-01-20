@@ -17,3 +17,23 @@ a {
     text-shadow: black 1px 1px 1px;
     margin-left: 20px;;
 }
+
+label {
+    color: orange;
+}
+
+input {
+    background-color: wheat;
+}
+
+#submitBtn {
+    margin-left: 160px;
+    width: 15vw;
+    background-color: wheat;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#submitBtn:hover {
+    box-shadow: white 1px 1px 10px;;
+}

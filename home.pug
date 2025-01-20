@@ -11,4 +11,25 @@ html
             //The Navegation Links
             a(href="./home.html").homeLink HOME |
             a(href="./about.html").aboutLink ABOUT | 
-            a(href="./contactUs.html").contactUsLink CONTACT US    
+            a(href="./contactUs.html").contactUsLink CONTACT US
+            
+
+
+        // Adding a form to the home page
+        form.theForm(action="/users" method="post")
+            br
+            br
+            //User name input
+            label(for="name") Name:
+            input(type="text" name="name" placeholder="Full name")#name
+            br
+            br
+
+            //User name input
+            label(for="email") Email:
+            input(type="email" name="email" placeholder="Email")#email
+            br
+            br
+            // Submit
+            input(type="submit" value="Submit")#submitBtn
+
