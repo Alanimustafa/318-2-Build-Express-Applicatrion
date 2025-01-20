@@ -39,17 +39,17 @@ app.get("/", (req, res) => {
 })
 
 app.get("/home", (req, res) => {
-    console.log('Home');
+    console.log('Home'); // For test only
     res.render("home", { title: "Home", active: "Home" });
 })
 
 app.get("/about", (req, res) => {
-    console.log('About');
+    console.log('About'); // For test only
     res.render("about", { title: "About", active: "About" });
   });
   
   app.get("/contactus", (req, res) => {
-    console.log('Contact Us');
+    console.log('Contact Us'); // For test only
     res.render("contactUs", { title: "Contact Us", active: "Contact Us" });
   });
 
