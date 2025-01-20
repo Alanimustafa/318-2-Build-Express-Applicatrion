@@ -1,0 +1,19 @@
+body {
+    background-color: #333f3c;
+}
+
+.homePageHeader {
+    font-weight: bold;
+    color: wheat;
+ 
+}
+
+.navBar {
+    background-color: rgb(238, 217, 179);
+}
+
+a {
+    color: orange;
+    text-shadow: black 1px 1px 1px;
+    margin-left: 20px;;
+}
