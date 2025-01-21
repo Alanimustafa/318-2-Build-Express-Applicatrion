@@ -63,3 +63,28 @@ p {
     color: yellow;
     font-weight: bold;
 }
+
+.aboutImage {
+    width: 640px;
+    height: 480px;
+    justify-self: center;
+    align-self: center;
+    margin-top: 10vh;
+    display: flex;
+    border: solid orange 2px;
+}
+
+.downloadBtn {
+    justify-self: center;
+    display: flex;
+    margin-top: 3vh;
+    width: 15vw;
+    height: 5vh;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.downloadBtn:hover {
+    box-shadow: white 1px 1px 10px;
+}

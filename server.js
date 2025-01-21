@@ -59,6 +59,11 @@ app.get("/about", (req, res) => {
     res.send(`Thank you ${req.body.name} for contacting us! We will get back to you shortly.`);
   });
 
+  app.post("/about", (req,res) => {
+    console.log ("DownLoad Button has been clicked", req.body);
+    res.download('./images/AMG.jpg')
+  })
+
 
 
 
