@@ -53,6 +53,12 @@ app.get("/about", (req, res) => {
     res.render("contactUs", { title: "Contact Us", active: "Contact Us" });
   });
 
+  // Post a message from Contact us
+  app.post("/contactus", (req, res) => {
+    console.log("Contact Form Data:", req.body); // console the request body object.
+    res.send(`Thank you ${req.body.name} for contacting us! We will get back to you shortly.`);
+  });
+
 
 
 
