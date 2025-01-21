@@ -26,19 +26,16 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Assigning the static files to the app.
 app.use (express.static("public"));
 
-
-// -------------- Routes Import
-
-// const userRoutes = require('./routes/users')
-
+// Using the Middleware Function
+app.use(logger);
 // --------------------------------------- Routes -----------------
 
-app.get("/", (req, res) => {
+app.get("/", logger, (req, res) => {
     console.log('Home');
     res.render("home", { title: "Home", active: "Home" });
 })
 
-app.get("/home", (req, res) => {
+app.get("/home", logger, (req, res) => {
     console.log('Home'); // For test only
     res.render("home", { title: "Home", active: "Home" });
 })
@@ -65,6 +62,13 @@ app.get("/about", (req, res) => {
   })
 
 
+
+
+// we can add middleware Function here too. Note any middleware takes req, res and next
+function logger (req, res, next) {
+    console.log("Middleware to show the url :",req.originalUrl); // req.originalUrl retrieves the original url
+    next();
+}
 
 
 // --------------------------- Starting the Server -------------------------
